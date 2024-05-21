@@ -1,0 +1,77 @@
+export default Object.freeze({
+
+    FONT_NAME: "Georama",
+    SESSION_TIMEOUT: 900000,
+
+
+    baseURL: "https://uatdms.mahindrafs.com/downloadApplication.action",
+    DT: "DEALER_DT_INVOICE_COPY",
+    UN: "dealer.dms@mahfin.com",
+    MA: "DEALER_DMS",
+
+
+
+    // BASE_URL: 'http://localhost:8080/pdd-bknd',
+    BASE_URL: 'https://pdd-ui.api.aws.mmfsl.net/pdd-bknd',
+
+    GET_USER_DETAILS: "/v1/users/",
+    LOGOUT_USER: "logout/",
+
+    GET_DASHBOARD_DETAILS: "/v1/dashBoard/getDashBoardCount",
+
+
+    GET_ASSET_DETAILS_URL: '/v1/invoice/assetDetails/',
+
+    GET_INVOICE_DETAILS_URL: '/v1/invoice/invoiceDetails/',
+    SAVE_INVOICE_DETAILS_URL: '/v1/invoice/saveInvoiceDetails',
+
+
+
+    GET_RC_DETAILS_URL: '/v1/rc/getRcDetails/',
+    SAVE_RC_DETAILS_URL: '/v1/rc/saveRcDetails',
+
+    GET_VAHAN_DETAILS_URL: '/v1/vahan/getVahanDetails',
+    GET_VAHAN_DETAILS_BY_CONTRACT_NO_URL: '/v1/vahan/getVahanDetailsByContractNumber/',
+
+    GET_INSURANCE_DETAILS_URL: '/v1/insurance/getInsuranceDetails/',
+    SAVE_INSURANCE_DETAILS: '/v1/insurance/saveInsuranceDetails',
+
+    GET_DROPDOWN_VALUES: '/v1/commonDd/getDropDrown',
+
+    GET_ALL_CONTRACT_ASSET_DETAILS_URL: "/v1/approval/getApprovalDetails/",
+
+    UPLOAD_DOCUMENT_TO_S3: "/v1/documents",
+
+    VIEW_DOCUMENT_FROM_DMS: "/v1/documents/",
+
+    VIEW_DOCUMENT_FROM_S3: "/v1/documents/view",
+
+
+    GET_AUDIT_DETAILS: "/v1/audit/auditDetails",
+
+    GET_DIFERRED_DOCUMENT_DETAILS_URL: "/v1/diferredDocument/getDiferredDocDetails",
+
+    APPROVAL_LIST_HEADER_LIST_FOR_ALL: [
+        {
+            id: "srNo", field: 'srNo', headerName: 'Sr No.', width: 80, align: 'center', headerAlign: 'center', headerClassName: 'super-app-theme--header'
+        },
+        {
+            id: 'contractNumber', field: 'contractNumber', headerName: 'Contract Number', width: 200, align: 'center', headerAlign: 'center', headerClassName: 'super-app-theme--header',
+        },
+        {
+            id: 'sourceType', field: 'sourceType', headerName: 'Source Type', width: 147, align: 'center', headerAlign: 'center', headerClassName: 'super-app-theme--header',
+        },
+        {
+            id: 'customerName', field: 'customerName', headerName: 'Customer Name', width: 279, align: 'center', headerAlign: 'center', headerClassName: 'super-app-theme--header',
+        },
+        {
+            id: 'assetCost', field: 'assetCost', headerName: 'Asset Amount', width: 140, align: 'center', headerAlign: 'center', headerClassName: 'super-app-theme--header',
+        },
+        {
+            id: 'engineNumber', field: 'engineNumber', headerName: 'Engine Number', width: 200, align: 'center', headerAlign: 'center', headerClassName: 'super-app-theme--header',
+        },
+        {
+            id: 'chasisNumber', field: 'chasisNumber', headerName: 'Chassis Number', width: 200, align: 'center', headerAlign: 'center', headerClassName: 'super-app-theme--header',
+        }
+    ]
+});
